@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> مدّكر </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@600&display=swap');
+        .container {
+            position: relative;
+            width: 50%;
+        }
+        
+        .image {
+            display: block;
+            width: 40%;
+            height: auto;
+        }
+        
+        .overlay {
+            position: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            width: 40%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #005780;
+        }
+        
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        
+        .text {
+            color: white;
+            font-size: 20px;
+            position: center;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        div {
+            color: #11A4A8;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #005780;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 4px 8px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #005780;
+        }
+        
+        .active {
+            background-color: #005780;
+        }
+        
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        
+        .allcon {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+        
+        .con1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            font-family: "Lalezar", "Poppins";
+            color: #005780;
+            font-weight: bolder;
+            font-size: 5rem;
+        }
+        
+        .continor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h2 {
+            font-size: 6rem;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .con2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        button {
+            margin: 20px;
+            border-radius: 120%;
+            background-color: #005780;
+            color: #fff;
+            padding: 20px;
+            padding-left: 70px;
+            padding-right: 70px;
+            box-shadow: 3px 3px 3px #11A4A8;
+            border: 3px solid #005780;
+        }
+        
+        button>p {
+            font-size: 3rem;
+            font-weight: bolder;
+            font-family: "Lalezar", "Poppins";
+        }
+        
+        button:hover {
+            margin: 20px;
+            border-radius: 120%;
+            border: 3px solid #11A4A8;
+            background-color: #11A4A8;
+            color: #fff;
+            padding: 20px;
+            padding-left: 70px;
+            padding-right: 70px;
+            box-shadow: 5px 5px 5px #005780;
+            transition: .8 ease-in-out;
+        }
+        
+        h2 {
+            color: #11A4A8;
+        }
+        
+        h5 {
+            color: #005780;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <ul>
+        <li><a href="#home"><i class="material-icons">logo</i></a></li>
+        <li style="float:right">
+            <a class="active" href="about"> <img src="C:\Users\hadyy\OneDrive\سطح المكتب\Web\مدكر\home.png" alt="logo" class="left"> </a>
+            <li><a href="#contact"><i class="material-icons">logo</i></a></li>
+            <li style="float:right">
+                <a class="active" href="contact"> <img src="C:\Users\hadyy\OneDrive\سطح المكتب\Web\مدكر\comments-question.png" alt="logo" class="left"> </a>
+            </li>
+            <li><a href="#tasbih"><i class="material-icons">logo</i></a></li>
+            <li style="float:right">
+                <a class="active" href="tasbih"> <img src="C:\Users\hadyy\OneDrive\سطح المكتب\Web\مدكر\tasbih.png" alt="logo" class="left"> </a>
+            </li>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <div class="allcon">
+        <div class="con1">
+            <h1>تسبيح</h1>
+        </div>
+        <div class="continor">
+            <h2 id="value">0</h2>
+        </div>
+        <div class="con2"><button id="increace"><p>سبح</p></button>
+            <button id="reset"><p>إعادة</p></button>
+        </div>
+    </div>
+    <script src="C:\Users\hadyy\OneDrive\سطح المكتب\Web\مدكر\in.js"></script>
+    <br>
+    <br>
+    <h5> The rights to this code reserved to @kh2x1</h5>
+</body>
+
+</html>
